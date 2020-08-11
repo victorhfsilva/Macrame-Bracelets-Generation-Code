@@ -41,4 +41,4 @@ There are four types of knots:
   
   - PNG image with the pattern preview.
 
-
+Used Programming Language: JavaScript with P5 library: https://p5js.org/ . 
