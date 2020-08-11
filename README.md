@@ -1,6 +1,6 @@
-#MACRAME BRACELETS PATTERN GENERATION CODE
+# MACRAME BRACELETS PATTERN GENERATION CODE
 
-##METHODS
+## METHODS
 
 This program plots Macrame Bracelets using three methods:
 
@@ -8,7 +8,7 @@ This program plots Macrame Bracelets using three methods:
 - The second by random symetrical generation;
 - And the third by converting binary strings inputed by the user in patterns.
 
-##PATTERNS DESCRIPTION
+## PATTERNS DESCRIPTION
 
 The odd rows always has a number of knots equal to half the number of strings (num_str/2).
 
@@ -18,7 +18,7 @@ The even rows always skip the border strings;
 
 And the knots are always made between two adjacent strings.
 
-##TYPES OF KNOTS
+## TYPES OF KNOTS
 
 There are four types of knots:
 
@@ -35,7 +35,7 @@ There are four types of knots:
 *This knot has a color equal to the right string color and don't results in any change on the strings order.*
 
 
-##OUTPUT
+## OUTPUT
  
   - Text and JSON files with the pattern strings. 
   
