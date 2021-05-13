@@ -40,7 +40,7 @@ function setup() {
   
   //DATA INPUT
   //Number of strings (X Axis)  
-  let num_str = 32;
+  let num_str = 16;
   //Number of lines  (Y Axis)
   let num_lines = 32; 
   //Squares Size
@@ -52,8 +52,10 @@ function setup() {
   
   //INPUT STRINGS COLORS (from border to center)
   //Add comment slashes on the next for loop if you want to declare all the colors manually (not symmetrical color patterns)
-  str_color=[color_red, color_orange, color_yellow, color_green, color_cyan, color_blue, color_purple, color_red, color_red, color_orange, color_yellow, color_green, color_cyan, color_blue, color_purple, color_red];
-  str_color_init=str_color;
+  str_color=[color_red, color_yellow, color_red, color_yellow, color_red, color_yellow, color_red, color_yellow,
+color_red, color_yellow, color_red, color_yellow, color_red, color_yellow, color_red, color_yellow];
+  
+str_color_init=str_color;
   //Duplicate the String Colors Array to get a Symetrical Image
   for (let i=0; i<num_str/2; i++)
   {
@@ -70,21 +72,21 @@ function setup() {
   //MANUAL INPUT OF MACRAME PATTERN 
   //(2 for right-right displacement, -2 for left-left displacement)
   //(1 for right-left knot without displacement, -1 for left-right knot without displacement)  
-  /*macrame_pattern[0] = [2, 2, 2, 2, -2, -2, -2, -2]; 
-  macrame_pattern[1] = [-2, 1, 2, 1, -2, -1, 2];
-  macrame_pattern[2] = [+2, 1, -2, 1, -1, 2, -1, -2]; 
-  macrame_pattern[3] = [2, 1, 2, 1, -2, -1, -2];*/
+  macrame_pattern[0] = [2, 1, 2, 1]; 
+  macrame_pattern[1] = [2, 1, 1];
+  macrame_pattern[2] = [1, 1, 1, 1]; 
+  macrame_pattern[3] = [2, 1, -2];
  
  //GENERATE RANDOM MACRAME PATTERN
  //Change pattern size to the number of rows of choice
- let pattern_size = 4;
+ /*let pattern_size = 4;
  choices=[2,-2,1,-1]; 
  for (let j=0; j<pattern_size; j++){
  macrame_pattern[j]=[];
-  if (j%2 == 0){for(let i=0; i<num_str/4; i++){
+ if (j%2 == 0){for(let i=0; i<num_str/4; i++){
     macrame_pattern[j][i]=random(choices);}}
   else {for(let i=0; i<num_str/4-1; i++){
-      macrame_pattern[j][i]=random(choices);}}}
+      macrame_pattern[j][i]=random(choices);}}}*/
       
  //ENCODE BINARY NUMBERS ON THE PATTERN
 /* let bin = [];
